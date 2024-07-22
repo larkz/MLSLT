@@ -3,41 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My New Project</title>
+    <title>Machine Learning Scientists in Legal Tech</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .container {
             text-align: center;
             background: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin: 20px;
         }
         h1 {
-            color: #333;
+            color: #0366d6;
         }
-        p {
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #eaeaea;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .time {
             color: #666;
         }
-        a {
-            color: #0366d6;
-            text-decoration: none;
+        .title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .abstract {
+            margin-top: 5px;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My New Project</h1>
-        <p>This is a project website hosted with GitHub Pages.</p>
-        <p>Visit my GitHub profile: <a href="https://github.com/<username>">GitHub Profile</a></p>
+        <h1>ICML 2024 Social: Machine Learning Scientists in Legal Tech</h1>
+        <div>This social event will feature several short invited talks, followed by a gathering of scientists, legal professionals, and academics. This will be a great opportunity to explore the exciting intersection of AI and legal tech, and to stimulate the cross-pollination of multidisciplinary ideas.</div>
+        <ul>
+            <li>
+                <strong>Larkin Liu - Octimine GmbH / TU Munich</strong>
+                <span class="time">5:30 PM - 5:40 PM</span>
+                <div class="title">From RAG's to Riches - Machine Learning Engineering for Patent Semantic Search</div>
+                <p class="abstract">In the field of intellectual property (IP) management, semantic search technologies play a pivotal role in aiding legal professionals with crucial tasks such as prior art discovery, IP defense and litigation, and competitor IP monitoring. Traditional TF-IDF models, while historically useful, have become increasingly inadequate in addressing the complexities and growing volume of modern IP data. We at Octimine is at the forefront of overcoming these challenges by leveraging state-of-the-art transformer models, including fine-tuned versions of SPECTER and BERT. By integrating Retrieval-Augmented Generation (RAG) models, Octimine effectively combines robust information retrieval techniques with the generative capabilities of GPT technology, providing a more sophisticated and contextually aware approach to IP management. Furthermore, the application of online learning and reinforcement learning allows these models to continuously adapt and refine their understanding of user objectives and search contexts, ensuring optimal performance in dynamic legal environments. This innovative combination significantly enhances the precision, efficiency, and effectiveness of IP legal practices, offering a cutting-edge solution for the management and defense of intellectual assets.
+                </p>
+            </li>
+            <li>
+                <strong>Shanshan Xu - TU Munich </strong>
+                <span class="time">5:40 PM - 5:50 PM</span>
+                <div class="title">Ethical Considerations in AI-driven Legal Decision Making</div>
+                <p class="abstract">Abstract: In legal decisions, split votes (SV) occur when judges cannot reach a unanimous decision, posing a difficulty for lawyers who must navigate diverse legal arguments and opinions. In high-stakes domains, understanding the alignment of perceived difficulty between humans and AI systems is crucial to build trust. However, existing NLP calibration methods focus on a classifier's awareness of predictive performance, measured against the human majority class, overlooking inherent human label variation (HLV). This paper explores split votes as naturally observable human disagreement and value pluralism. We collect judges' vote distributions from the European Court of Human Rights (ECHR), and present SV-ECHR, a case outcome classification (COC) dataset with SV information. We build a taxonomy of disagreement with SV-specific subcategories. We further assess the alignment of perceived difficulty between models and humans, as well as confidence- and human-calibration of COC models. We observe limited alignment with the judge vote distribution. To our knowledge, this is the first systematic exploration of calibration to human judgements in legal NLP. Our study underscores the necessity for further research on measuring and enhancing model calibration considering HLV in legal decision tasks.
+                </p>
+            </li>
+            <li>
+                <strong>Free Speaking Slot(s)</strong>
+                <span class="time">5:50 PM - 6:20 PM</span>
+            </li>
+            <li>
+                <strong>Social Time 😊</strong>
+                <span class="time">6:20 PM - 7:00 PM</span>
+                <p class="abstract">Time to socialize and mingle! </p> 
+            </li>
+        </ul>
     </div>
 </body>
 </html>
